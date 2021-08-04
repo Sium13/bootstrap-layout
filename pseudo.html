@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo</title>
+
+    <style>
+        h1::before {
+            content: 'hello ';
+            color: aqua;
+        }
+
+        h1::after {
+            content: ' gello';
+            color: blueviolet;
+        }
+
+        blockquote::before {
+            content: open-quote;
+            font-size: 1.5rem;
+            color: crimson;
+        }
+
+        blockquote::after {
+            content: close-quote;
+            font-size: 1.5rem;
+            color: crimson;
+        }
+
+        .section-title {
+            display: inline-block;
+        }
+
+        .section-title::after,
+        .section-title:hover:before {
+            content: '';
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: darkgoldenrod;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Having fun with pseudo pseudo vai bon.</h1>
+    <h1>Having fun with pseudo pseudo vai bon bandhobi.</h1>
+
+
+    <section>
+        <h2 class="section-title">Best Quotes</h2>
+        <blockquote>
+            Those Who Do Not Understand True Pain Can Never Understand True Peace.
+        </blockquote>
+        <blockquote>
+            I Shut My Eyes A Long Time Ago... The Things I Seek Now Lie Only In The Darkness.
+        </blockquote>
+        <blockquote>So I Was Not Born With A Whole Lot Of Natural Talent... But I Work Hard And I Never Give Up. That Is
+            My Gift. That Is MY Ninja Way!</blockquote>
+    </section>
+    <section>
+        <p>Your Name* <input type="text" placeholder="Your Name" name="" id=""></p>
+    </section>
+</body>
+
+</html>
